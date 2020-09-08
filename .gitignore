@@ -12,6 +12,9 @@
 *.map
 *.exp
 
+# Assembly files
+*.s
+
 # Precompiled Headers
 *.gch
 *.pch
