@@ -1,0 +1,20 @@
+#
+# Makefile for temp.c
+#
+CC=gcc
+OBJ=temp.o
+EXE=temp.exe
+
+%.o: %.c 
+	$(CC) -c -o $@ $<
+
+$(EXE): $(OBJ)
+	$(CC) -o $@ $^
+
+.PHONY: clean run
+
+clean:
+	/bin/rm -f $(OBJ) $(EXE)
+
+run: $(EXE)
+	./$(EXE)
