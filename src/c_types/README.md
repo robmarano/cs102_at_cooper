@@ -1,4 +1,4 @@
-# Intro to working with types
+# Session 3: Intro to working with types
 
 ## Working with ASCII characters and wrapping
 Review ```run.ascii.sh``` Bash script to see how to build (compile then link) the ascii.exe program and then run it and copy output to a log file that keeps appending.
