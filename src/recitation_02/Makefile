@@ -2,16 +2,21 @@
 # Makefile for star.c
 #
 CC=gcc
-OBJ=star.o
-EXE=star.exe
+APP=star
+OBJ=$(APP).o
+EXE=$(APP).exe
+LOG=$(APP).log
 
-%.o: %.c 
+%.o: %.c
 	$(CC) -c -o $@ $<
 
 $(EXE): $(OBJ)
 	$(CC) -o $@ $^
 
-.PHONY: clean
+.PHONY: clean run
+
+run: $(EXE)
+	./$(EXE)
 
 clean:
-	/bin/rm -f $(OBJ) $(EXE)
+	/bin/rm -f $(OBJ) $(EXE) $(LOG)
