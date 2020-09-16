@@ -1,7 +1,7 @@
 # Session 3: Intro to working with types
 
 ## Working with ASCII characters and wrapping
-![Image for ASCII and wrapping](https://raw.githubusercontent.com/robmarano/cs102_at_cooper/master/session_03/src/c_types/ctypes.png)
+![Image for ASCII and wrapping](https://raw.githubusercontent.com/robmarano/cs102_at_cooper/session_03/src/c_types/ctypes.png)
 Review ```run.ascii.sh``` Bash script to see how to build (compile then link) the ascii.exe program and then run it and copy output to a log file that keeps appending.
 ```bash
 $ ./run.ascii.sh
