@@ -13,7 +13,10 @@ LOG=$(APP).log
 $(EXE): $(OBJ)
 	$(CC) -o $@ $^
 
-.PHONY: clean
+.PHONY: clean run
+
+run: $(EXE)
+	./$(EXE)
 
 clean:
 	/bin/rm -f $(OBJ) $(EXE) $(LOG)
