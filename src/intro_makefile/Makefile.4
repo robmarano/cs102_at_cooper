@@ -1,8 +1,0 @@
-CC=gcc
-OBJ = hello.o
-
-%.o: %.c 
-	$(CC) -c -o $@ $<
-
-hello.exe: $(OBJ)
-	$(CC) -o $@ $^
