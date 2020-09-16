@@ -1,3 +1,11 @@
+#
+# macos
+.DS_Store
+
+# logs
+*.log
+
+#
 # Prerequisites
 *.d
 
