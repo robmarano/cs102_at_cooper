@@ -10,6 +10,8 @@ Or run
 $ make -f Makefile.ascii clean run
 ```
 
+Check ```ascii.c``` for the example of how to wrap with ```char`` data type.
+
 On macos, replace ```make``` with ```gmake```
 
 ## Working with C types and learning their processor-based limits
