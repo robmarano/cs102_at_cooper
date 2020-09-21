@@ -26,3 +26,4 @@ $ make -f Makefile.limits clean run
 ```
 On macos, replace ```make``` with ```gmake```
 
+## Working with unary operators
