@@ -1,5 +1,5 @@
 #
-# krevma/
+# Top-level Makefile
 #
 
 TOPTARGETS=all clean
