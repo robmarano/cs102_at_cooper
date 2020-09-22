@@ -23,8 +23,9 @@ $(EXE): $(OBJ)
 .PHONY: clean run
 
 # This rule replaces the run.$(APP).sh bash script
+#	./$(EXE) | tee $(LOG)
 run: $(EXE)
-	./$(EXE) | tee $(LOG)
+	./$(EXE)
 
 clean:
 	/bin/rm -f $(OBJ) $(EXE) $(LOG)
