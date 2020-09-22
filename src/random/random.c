@@ -24,7 +24,7 @@ int main() {
     int done = 0;
     while ( !done ) {
         c = getchar(); /* see man getchar */
-        fpurge(stdin); /* or use fflush(stdin); see man fflush */
+        fflush(stdin); /* fpurge(stdin); or use fflush(stdin); see man fflush */
         cc = c - 48; /* according to ascii, transpose by 48 to get number from letter */
         if (isdigit(c)) {
             if ( (cc > 0) && (cc < 7) ) {
