@@ -19,14 +19,14 @@ int main() {
     /* float rand_num = frand(); */
 
     printf("Computer randomly rolling a die. What's your guess? ");
-    int cc = 0;
-    int c;
+    int cc = 0; /* this number represents the actual number translated from its ascii code */
+    int c; /* the character the user inputs */
     int done = 0;
     while ( !done ) {
-        c = getchar(); /* see man getchar */
+        c = getchar(); /* see man getchar; gets char from keyboard from stdin stream */
         fflush(stdin); /* fpurge(stdin); or use fflush(stdin); see man fflush */
-        cc = c - 48; /* according to ascii, transpose by 48 to get number from letter */
         if (isdigit(c)) {
+            cc = c - 48; /* according to ascii, transpose by 48 to get number from letter */
             if ( (cc > 0) && (cc < 7) ) {
                 printf("You entered %d.\n", cc);
                 done = 1;
