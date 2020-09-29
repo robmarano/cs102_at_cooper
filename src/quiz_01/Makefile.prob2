@@ -1,0 +1,5 @@
+%.o:	%.c
+	gcc -c -o $@ $<
+
+a.out:	quiz_01.o
+	gcc -o $@ $^
