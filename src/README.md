@@ -3,6 +3,10 @@
 ## Topics to cover
 1. C directives
 2. Variables and arithmetic expressions
+3. Loops
+4. Character input and output
+5. Arrays
+6. Functions
 
 ## C directives
 
@@ -41,7 +45,7 @@ char squote = '\''; /* \ means "escape sequence" - so \' means single-quote, lit
 long day = 1000L * 60L * 60L * 24L; /* milliseconds / day */
 ```
 
-## Automatic variables
+### Automatic variables
 
 From K&R textbook:
 
