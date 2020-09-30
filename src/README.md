@@ -392,10 +392,11 @@ Here's a simple example of using arguments to the main function.
 #include <stdio.h>
 
 int main(int argc, char *argv[])
-/* argc is # of input arguments; char *argv[] is a pointer to strings) /*
+/* argc is # of input arguments; char *argv[] is a pointer to strings) */
 {
     printf("argc = %d\n", argc);
-    for (int i=0; i < argc; i++)
+    int i;
+    for (i=0; i < argc; i++)
     {
         printf("argument #%d is %s\n", i, argv[i]);
     }
