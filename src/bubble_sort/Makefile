@@ -1,10 +1,10 @@
 #
-# Makefile for problem_03.c
+# Makefile for bubble_sort
 #
 # The Build Rules for This Program
 #
 # Variables
-APP=problem_03
+APP=bubble_sort
 CC=gcc
 CFLAGS=-Wall -Werror -ansi -g
 #CFLAGS=-Wall -Werror -ansi -pedantic-errors -g
