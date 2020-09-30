@@ -1,20 +1,16 @@
-/*
- * main.c
- *
- * mainline code to create a program that demonstrates use of bubble sort.
- *
- */
-
 #include <stdio.h>
+#include "bubble_sort.h"
+
+#define MAX_ARRAY_SIZE 20
 
 int main()
 {
-    int total_count, counter, counter1, swap_var;
-    int array[20];
+    int total_count, counter;
+    int array[MAX_ARRAY_SIZE];
 
     /* fetch from user her/his list of numbers to sort */
 
-    printf("How many number you want to input?\n");
+    printf("How many number you want to input, not exceeding %d?\n", MAX_ARRAY_SIZE);
     scanf("%d", &total_count); /* what is that & character in front of array? */
 
     printf("\nPlease enter %d integers that has to be sorted\n", total_count);
@@ -25,19 +21,7 @@ int main()
     for (counter = 0; counter < total_count; counter++)
         printf("%d ", array[counter]);
 
-    /* bubble sort algorithm */
-    for (counter = 0 ; counter < total_count - 1; counter++)
-    {
-        for (counter1 = 0 ; counter1 < total_count - counter - 1; counter1++)
-        {
-            if (array[counter1] > array[counter1+1]) /* For decreasing order use < */
-            {
-                swap_var  = array[counter1];
-                array[counter1] = array[counter1+1];
-                array[counter1+1] = swap_var;
-            }
-        }
-    }
+    bubbleSort(array, total_count);
 
     printf("\nBelow is the list of elements sorted in ascending order:\n");
     for (counter = 0; counter < total_count; counter++)
