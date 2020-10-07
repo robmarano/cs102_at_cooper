@@ -1,16 +1,11 @@
 # Session 6: Putting our C skills to use...
 
 ## Topics to cover
-1. Sorting in C
+1. Quiz 2 - full review of C basics
+2. Quiz 2 review, including Fibonacci
+3. Introduction of the concept of **recursion**
+4. Initial tic-tac-toe design basics
 
-## Sorting in C
-Sorting in C is a well-known, and practical use of C programming, especially in engineering, science, finance, and math.
+![Whiteboard Snapshot of Tic Tac Toe Initial Design - Session 06](./images/tic-tac-toe_design_session_06.png)
 
-### Various types of sorting algorithms
-Using (Types of Sorting)[https://www.educba.com/sorting-in-c/] as a reference. The best reference is Knuth's (__The Art of Computer Programming, Volume 3: Sorting and Searching__)[https://www.amazon.com/Art-Computer-Programming-Sorting-Searching/dp/0201896850]
-
-### Bubble Sort
-
-```c
-
-```
+See code in ```src``` directory
