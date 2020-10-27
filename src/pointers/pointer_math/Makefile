@@ -1,10 +1,10 @@
 #
-# Makefile for simple_pointing
+# Makefile for pointer_math
 #
 # The Build Rules for This Program
 #
 # Variables
-APP=simple_pointing
+APP=pointer_math
 CC=gcc
 CFLAGS=-Wall -Werror -ansi -std=c99 -g
 #CFLAGS=-Wall -Werror -ansi -pedantic-errors -std=c99 -g

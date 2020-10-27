@@ -3,6 +3,7 @@
 /* Global variables */
 int j, k;
 int *ptr;
+int *pptr;
 
 int main(void)
 {
@@ -16,6 +17,14 @@ int main(void)
     printf("ptr has the value %p and is stored at memory location %p\n", ptr, (void *)&ptr);
     printf("The value of the integer pointed to by ptr is %d\n", *ptr);
 
+    printf("The size of an int variable is %lu bytes.\n", sizeof(int));
+    printf("The size of an int pointer variable is %lu bytes.\n", sizeof(int *));
+
+    pptr = ptr - 1;
+    printf("pptr has the value %p and is stored at memory location %p\n", pptr, (void *)&pptr);
+    printf("The value of the integer at 1 int memory location BEFORE ptr is %d\n", *(ptr - 1));
+
+    printf("\n");
     return(0);
 }
 
