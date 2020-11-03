@@ -1,10 +1,10 @@
 #
-# Makefile for pointer_math
+# Makefile for more_pointers
 #
 # The Build Rules for This Program
 #
 # Variables
-APP=pointer_math
+APP=more_pointers
 CC=gcc
 CFLAGS=-Wall -Werror -ansi -std=c99 -g
 #CFLAGS=-Wall -Werror -ansi -pedantic-errors -std=c99 -g
