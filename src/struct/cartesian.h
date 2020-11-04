@@ -20,5 +20,6 @@ struct rectangle
 
 double getDistanceFromRect(struct rectangle);
 double getDistanceFromPoints(struct point pt1, struct point pt2);
+void dilatePoint(struct point *pt, int dilation);
 
 #endif /* CARTESIAN_H */

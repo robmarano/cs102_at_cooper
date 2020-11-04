@@ -18,3 +18,10 @@ double getDistanceFromPoints(struct point pt1, struct point pt2)
     return(distance);
 }
 
+void dilatePoint(struct point *pt, int dilation)
+{
+    pt->x = pt->x * dilation;
+    pt->y = pt->y * dilation;
+
+    return;
+}
