@@ -2,11 +2,11 @@
 #include <math.h>
 #include "cartesian.h"
 
-int main(void)
+int main(int argc, char *argv[])
 {
     /* struct point definition */
     struct point pt1 = { 0, 0};
-    struct point pt2 = { 1, 1};
+    struct point pt2 = { 2, 1};
     struct rectangle rect = { pt1, pt2 };
 
     double distance = getDistanceFromRect(rect);
