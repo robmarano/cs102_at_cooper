@@ -1,11 +1,9 @@
-# Session 6: Putting our C skills to use...
+# Session 11: Putting our C skills to use...
 
 ## Topics to cover
-1. Quiz 2 - full review of C basics
-2. Quiz 2 review, including Fibonacci
-3. Introduction of the concept of **recursion**
-4. Initial tic-tac-toe design basics
+1. Understanding a struct, what is a union?
 
-![Whiteboard Snapshot of Tic Tac Toe Initial Design - Session 06](./images/tic-tac-toe_design_session_06.png)
+### Union
+K&R define a union as, "a variable that may hold (at different times) objects of different types and sizes, with the compiler keeping track of size and alignment requirements. Unions provide a way to manipulate different kinds of data in a single area of storage [addressed in memory], without embedding any machine-depedent information in the program."
 
 See code in ```src``` directory

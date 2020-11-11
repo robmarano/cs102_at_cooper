@@ -1,10 +1,10 @@
 #
-# Makefile for tic_tac_toe
+# Makefile for union
 #
 # The Build Rules for This Program
 #
 # Variables
-APP=tic_tac_toe
+APP=union
 CC=gcc
 CFLAGS=-Wall -Werror -ansi -std=c99 -g
 #CFLAGS=-Wall -Werror -ansi -pedantic-errors -std=c99 -g
@@ -33,3 +33,4 @@ run: $(EXE)
 
 clean:
 	/bin/rm -f $(OBJS) $(EXE) $(LOG)
+

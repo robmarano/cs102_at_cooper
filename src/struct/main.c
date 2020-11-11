@@ -2,7 +2,14 @@
 #include <math.h>
 #include "cartesian.h"
 
-int main(int argc, char *argv[])
+int main1(void)
+{
+    int x = 0;
+    printf("Size of int = %lu\n",sizeof(x));
+    return(0);
+}
+
+int main2(int argc, char *argv[])
 {
     /* struct point definition */
     struct point pt1 = { 0, 0};
