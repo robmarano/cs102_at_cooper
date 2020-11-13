@@ -21,7 +21,7 @@ LOG=$(APP).log
 
 # for linking object files into an executable program file
 $(EXE): $(OBJS)
-	$(CC) $(LDFLAGS) -o $@ $^
+	$(CC) -o $@ $^ $(LDFLAGS)
 
 # This is to trick make to know that "clean" and "run" are targets
 .PHONY: clean run
