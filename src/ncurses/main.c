@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
     getmaxyx(stdscr, max_y, max_x);
     while(1)
     {
+        getmaxyx(stdscr, max_y, max_x);
         clear();
         mvprintw(y, x, "o");
         refresh();
