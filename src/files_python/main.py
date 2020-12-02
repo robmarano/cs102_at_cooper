@@ -2,11 +2,20 @@
 
 # Globals
 FILENAME='workfile'
+NEWFILE='newfile'
 SIZE = 8
 
 # Functions
 
 def main():
+    with open(NEWFILE, 'w') as f:
+        f.write('This is the first line.\n')
+    with open(NEWFILE, 'r') as f:
+        all_lines = f.readline()
+    for line in all_lines:
+        print(line, end='')
+
+def main3():
     with open(FILENAME) as f:
         all_lines = f.readlines()
     for line in all_lines:
