@@ -2,6 +2,9 @@
 # macos
 .DS_Store
 
+# pyenv
+.python-version
+
 # logs
 *.log
 
