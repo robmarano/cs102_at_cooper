@@ -33,7 +33,7 @@ $ ./hello.exe
 ```bash
 $ gcc -S hello.c
 ```
-This command generates the intermediate assembly file ```hello.s```, and its contents are, as assembled on a macos computer:
+This command generates the intermediate assembly file ```hello.s```, and its contents are, as assembled on a macos computer. Note line numbers and their ```.``` separator have been added for readability.
 ```asm
 01.	.section	__TEXT,__text,regular,pure_instructions  
 02.	.build_version macos, 10, 15	sdk_version 10, 15, 6
