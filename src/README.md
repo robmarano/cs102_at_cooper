@@ -35,36 +35,36 @@ $ gcc -S hello.c
 ```
 This command generates the intermediate assembly file ```hello.s```, and its contents are, as assembled on a macos computer:
 ```asm
-	.section	__TEXT,__text,regular,pure_instructions
-	.build_version macos, 10, 15	sdk_version 10, 15, 6
-	.globl	_main                   ## -- Begin function main
-	.p2align	4, 0x90
-_main:                                  ## @main
-	.cfi_startproc
-## %bb.0:
-	pushq	%rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset %rbp, -16
-	movq	%rsp, %rbp
-	.cfi_def_cfa_register %rbp
-	subq	$16, %rsp
-	movl	$0, -4(%rbp)
-	leaq	L_.str(%rip), %rdi
-	movb	$0, %al
-	callq	_printf
-	xorl	%ecx, %ecx
-	movl	%eax, -8(%rbp)          ## 4-byte Spill
-	movl	%ecx, %eax
-	addq	$16, %rsp
-	popq	%rbp
-	retq
-	.cfi_endproc
-                                        ## -- End function
-	.section	__TEXT,__cstring,cstring_literals
-L_.str:                                 ## @.str
-	.asciz	"Hello, World!\r\n"
-
-.subsections_via_symbols
+01.	.section	__TEXT,__text,regular,pure_instructions  
+02.	.build_version macos, 10, 15	sdk_version 10, 15, 6
+03.	.globl	_main                   ## -- Begin function main
+04.	.p2align	4, 0x90
+05. _main:                              ## @main
+06.	.cfi_startproc
+07. ## %bb.0:
+08. 	pushq	%rbp
+09.	.cfi_def_cfa_offset 16
+10.	.cfi_offset %rbp, -16
+11.	movq	%rsp, %rbp
+12.	.cfi_def_cfa_register %rbp
+13.	subq	$16, %rsp
+14.	movl	$0, -4(%rbp)
+15.	leaq	L_.str(%rip), %rdi
+16.	movb	$0, %al
+17.	callq	_printf
+18.	xorl	%ecx, %ecx
+19.	movl	%eax, -8(%rbp)          ## 4-byte Spill
+20.	movl	%ecx, %eax
+21.	addq	$16, %rsp
+22.	popq	%rbp
+23.	retq
+24.	.cfi_endproc
+25.                                      ## -- End function
+26.	.section	__TEXT,__cstring,cstring_literals
+27. L_.str:                              ## @.str
+28.	.asciz	"Hello, World!\r\n"
+29.
+30. .subsections_via_symbols
 ```
 
 ## [For next session] Compiling and other SW dev tasks using Make and gcc
