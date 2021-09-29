@@ -1,10 +1,10 @@
 #
-# Makefile for pascals_triangle
+# Makefile for input
 #
 # The Build Rules for This Program
 #
 # Variables
-APP=pascal_triangle
+APP=input
 CC=gcc
 OBJ=$(APP).o
 EXE=$(APP).exe

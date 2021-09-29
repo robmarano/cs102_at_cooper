@@ -3,6 +3,7 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 #define SUCCESS 0
 
 int factorial(int n) {
@@ -21,7 +22,11 @@ int nCr(int n,int r) {
 int main(void) {
    int n, i, j;
 
-   n = 5;
+   printf("Please enter number of levels to show Pascal's Triangle: ");
+   /* n = 5; */
+   /* n = getchar() - 48; */
+   scanf("%d",&n);
+   printf("%d\n", n);
 
    printf("Pascal's Triangle for %d levels:\n", n+1);
 
