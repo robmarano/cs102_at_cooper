@@ -14,7 +14,7 @@ char grid[HEIGHT][WIDTH];
 int main(void)
 {
     float xInc = 0.1;
-/*
+
     printf("using calculateSineValues()\n");
     calculateSineValues();
 
@@ -26,9 +26,9 @@ int main(void)
 
     printf("Press ENTER key to Continue\n");
     getchar();
-*/
+/*
     printf("using simpleCurses\n");
     simpleCurses(xInc);
-
+*/
     return(SUCCESS);
 }

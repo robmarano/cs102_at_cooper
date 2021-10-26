@@ -6,11 +6,12 @@
 # Variables
 APP=sinusoidal
 CC=gcc
-CFLAGS=-Wall -Werror -ansi -std=c99 -g
+CFLAGS=
+#CFLAGS=-Wall -Werror -ansi -std=c99 -g -I/usr/include
 # other CFLAGS
 #CFLAGS=-Wall -Werror -ansi -pedantic-errors -std=c99 -g
 # linking flags
-LDFLAGS=
+LDFLAGS=-lm
 # all the C source files end in .c
 SRCS=$(wildcard *.c)
 OBJS=$(SRCS:.c=.o)
@@ -24,7 +25,7 @@ LOG=$(APP).log
 
 # for linking object files into an executable program file
 $(EXE): $(OBJS)
-	$(CC) $(LDFLAGS) -o $@ $^
+	$(CC) -o $@ $^ $(LDFLAGS)
 
 # This is to trick make to know that "clean" and "run" are targets
 .PHONY: clean run
