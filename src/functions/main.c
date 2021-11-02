@@ -26,9 +26,9 @@ int main(void)
 
     printf("Press ENTER key to Continue\n");
     getchar();
-/*
+
     printf("using simpleCurses\n");
     simpleCurses(xInc);
-*/
+
     return(SUCCESS);
 }
