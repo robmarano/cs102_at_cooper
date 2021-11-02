@@ -1,15 +1,15 @@
 /*
- * recursion.h
+ * main.h
  *
  * Header file for recursive functions
  * Written by: Rob Marano <robmarano@gmail.com>
  */
 
-#ifndef RECURSION_H
-#define RECURSION_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdio.h>
 
-unsigned int fibonacci(unsigned int n);
+#define SUCCESS 0
 
-#endif /* RECURSION_H */
+#endif /* MAIN_H */

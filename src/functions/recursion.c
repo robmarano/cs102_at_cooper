@@ -7,7 +7,7 @@
 
 #include "recursion.h"
 
-int fibonacci(int n) {
+unsigned int fibonacci(unsigned int n) {
     if(n == 0 || n == 1) {
         return n;
     }
