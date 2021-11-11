@@ -7,23 +7,18 @@
  */
 
 #include "main.h"
-#include "pointers.h"
+
+#define MAXLINE 25
 
 int main(void) {
+  printf("Enter your first name: ");
+/*
+  char *fname;
+  fname = malloc(MAXLINE * sizeof(char));
+*/
+  char fname[MAXLINE];
+  scanf("%s",fname);
+  printf("Your name is %s\n",fname);
 
-  int a = 10;
-  int b = 20;
-  printf("a = %d; b = %d\n",a,b);
-  swap(&a, &b);
-  nswap(a, b);
-  printf("a = %d (0x%x); b = %d (0x%x)\n",a, &a, b, &b);
-
-  int *pa = &a;
-  printf("a = %d ; pa = 0x%x\n",a, pa);
-  int *pb = pa + 1;
-  printf("b = %d ; pb = 0x%x\n",b, pb);
-  
-
-  printf("\n");
   return(SUCCESS);
 }
