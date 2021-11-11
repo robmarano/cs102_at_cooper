@@ -15,4 +15,6 @@ struct point {
     double y;
 };
 
+void loopCoords(int length, struct point *);
+
 #endif /* STRUCT_H */
