@@ -5,7 +5,7 @@
 #
 # Variables
 APP=work_with_files
-APP_FILES=test_file.txt
+APP_FILES=test_file.txt test_file.bin
 CC=gcc
 CFLAGS= -g
 #CFLAGS=-Wall -Werror -ansi -std=c99 -g -I/usr/include

@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #define SUCCESS 0
+#define SIZE 24
 
 int main(void) {
     FILE *fp;
@@ -24,6 +26,7 @@ int main(void) {
      */
 
     /* open file pointer in write mode */
+/*
     fp = fopen(fileName, "w+");
     if (fp != NULL) {
         printf("Writing from fprintf...\n");
@@ -34,7 +37,7 @@ int main(void) {
         fclose(fp);
         printf("Done.\n");
     }
-
+*/
     /*
      * now let's return to the beginning of the file we wrote,
      * and read the file to print to screen
@@ -46,7 +49,55 @@ int main(void) {
      *
      */
     long int cursorPos = 0;
-    fseek( fp, cursorPos, SEEK_SET ); /* SEEK_SET = beginning of file */
+    /* SEEK_SET = beginning of file */
+   /* fseek( fp, cursorPos, SEEK_SET ); */
 
+/*
+   char buff[256];
+
+   fp = fopen(fileName, "r");
+   fscanf(fp, "%s", buff);
+   printf("1 : %s\n", buff );
+
+   fgets(buff, 256, (FILE*)fp);
+   printf("2: %s\n", buff );
+   
+   fgets(buff, 256, (FILE*)fp);
+   printf("3: %s\n", buff );
+   fclose(fp);
+
+    fp = fopen(fileName, "r");
+    while (! feof(fp) ) {
+        for (int i=0; i<SIZE; i++)
+            buff[i] = ' ';
+*/
+/*        fscanf(fp, "%s", buff); */
+/*        fgets(buff, 255, (FILE*)fp);
+        if (feof(fp))
+            break;
+        printf("%s:", buff);
+    }
+    fclose(fp);
+*/
+
+    fp = fopen(fileName, "w+");
+    if (fp != NULL) {
+        fprintf(fp, "This is line 1.\n");
+        fprintf(fp, "This is line 2.\n");
+        fprintf(fp, "This is line 3.\n");
+    }
+    fclose(fp);
+
+    char *buffer = (char *) malloc(SIZE * sizeof(char));
+    fp = fopen(fileName, "r");
+    if (fp != NULL) {
+        do {
+            fscanf(fp, "%[^\n]%*c", buffer);
+            printf("%s", buffer);
+        } while (!feof(fp));
+        free(buffer);
+        fclose(fp);
+    }
     return(SUCCESS);
 }
+
