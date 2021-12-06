@@ -1,2 +1,21 @@
-# cs102_at_cooper
-Repository used in the delivery of the CS 102 introduction to computer science using C and a smidgen of Python at The Cooper Union (cooper.edu). The official course description can be found here at http://cooper.edu/engineering/courses/computer-science/cs-102.
+# Project TBD
+by First Student Name and Second Student Name
+for CS 102 Section C Fall 2021
+
+## Introduction
+What is this project for?
+
+What does it do?
+
+## Technical Description
+
+Describe your project's source code in terms of algorithms and data structures.
+
+## Screen Shots of Working Program
+
+Add images here like this:
+![Example image](./images/example.png)
+
+## Link to YouTube video recording of presentation and code walk through.
+
+
