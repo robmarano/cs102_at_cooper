@@ -166,7 +166,7 @@ int main(void) {
 		}
 	}
 	char mode;
-	if (count > 1) {
+	if (maxVal > 1) {
 		mode = maxVal;
 	} else {
 		mode = 'x';
